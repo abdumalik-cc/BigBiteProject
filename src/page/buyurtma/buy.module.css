@@ -1,0 +1,48 @@
+.malumotSection .malumotDiv{
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.infDiv{
+     width: 500px;
+}
+.malumotSection h1{
+    text-align: start;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.malumotSection span{
+    color: rgb(156, 8, 8);
+}
+.malumotSection #container{
+    display: flex;
+    justify-content: space-between;
+}
+.inputs input,textarea{
+    width: 80%;
+    padding: 10px 15px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.inputs input{
+    height: 45px;
+}
+.inputs textarea{
+    height: 100px;
+}
+.inputs{
+    width: 900px;
+}
+.inputs button{
+    background-color: rgb(156, 8, 8);
+    color: white;
+    padding: 8px 18px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+}

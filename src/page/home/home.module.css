@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nata Sans", sans-serif;
+}
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.banner{
+    width: 100%;
+    margin-top: 80px;
+}
+
+.categories  button{
+    padding: 8px 18px;
+    border:  none;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: rgb(156, 8, 8);
+}
+.categories  select{
+    padding: 8px 18px;
+    border:  none;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: rgb(156, 8, 8);
+    color: white;
+    outline: none;
+}
+.categories select option{
+    border-radius: 10px;
+}
+.categories input{
+    padding: 8px 18px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid grey;
+    font-weight: 500;
+    font-size: 16px;
+}
+.categories div{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.categories{
+    padding: 20px 0;
+}
+
+.menu div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.loader{
+    margin: 100px auto;
+}
+a{
+    text-decoration: none;
+    color:  rgb(156, 8, 8);
+}
+
+
+@media (max-width:450px) {
+    .categories div button{
+        font-size: 10px;
+    }
+    .loader{
+        size: 350;
+    }
+}

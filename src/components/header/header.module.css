@@ -1,0 +1,106 @@
+header h1{
+    color: rgb(156, 8, 8);
+}
+header div{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+header:nth-child(1) button{
+    background-color: rgb(156, 8, 8);
+    color: white;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 10px;
+}
+header{
+    padding: 20px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000000;
+}
+
+header select{
+    padding: 6px 15px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    color: gray;
+    outline: none;
+}
+.menu{
+    display: none;
+    font-size: 15px;
+    padding: 5px 5px;
+}
+.modal{
+    background-color: white;
+    width: 55%;
+    position: fixed;
+    top: 180px;
+    left: 340px;
+    height: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+}
+.modal .exitBtn{
+    position: absolute;
+    right: 10px;
+    background-color: initial;
+    border: none;
+    font-size: 20px;
+}
+
+.modal div{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: center;
+}
+.modal .deleteBtn{
+    padding: 8px 18px;
+    border:  none;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: rgb(156, 8, 8);
+    border:  none;
+}
+.modal p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.davomBtn{
+    position:absolute;
+    left: 45%;
+    bottom: 20px;
+    background-color: rgb(156, 8, 8);
+    border: none;
+    border-radius: 10px;
+    padding: 8px 18px;
+    color: white;
+    font-size: 16px;
+}
+
+@media (max-width:450px) {
+    .y{
+        display: none;
+    }
+    header:nth-child(1) h1{
+        font-size: 18px;
+    }
+    header input,select{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+}

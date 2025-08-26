@@ -1,0 +1,70 @@
+.batafsilBox{
+    margin-top: 120px;
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    border-radius: 25px;
+    gap: 20px;
+}
+.batafsilBox img{
+    border-radius: 25px;
+    width: 55%;
+}
+.batafsilBox h1{
+    font-size: 22px;
+    /* border-bottom: 1px solid grey; */
+}
+.batafsilBox h2{
+    color: rgb(58, 165, 58);
+    font-size: 18px;
+    margin: 20px 0;
+}
+.batafsilBox .yetkazish{
+    background-color: rgb(246, 239, 239);
+    width: 500px;
+    padding: 15px 8px;
+    border-radius: 20px;
+}
+.narx{
+    margin-top: 3 00px;
+    display: flex;
+    justify-content: space-between;
+}
+.narx h1{
+    font-size: 20px;
+    color:  rgb(156, 8, 8);
+
+}
+.narx button{
+    background-color:  rgb(156, 8, 8);
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 10px;
+}
+.loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+
+
+
+@media (max-width:450px) {
+    .batafsilBox{
+        flex-direction: column;
+        width: 90%;
+        display: block;
+        margin: 120px auto;
+    }
+    .batafsilBox img{
+        width: 90%;
+    }
+    .yetkazish{
+        width: 90%;
+        padding: 0 10px;
+        display: none;
+    }
+}
