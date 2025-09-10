@@ -72,6 +72,9 @@ a{
     .categories div button{
         font-size: 10px;
     }
+    .categories div input{
+        font-size: 10px;
+    }
     .loader{
         size: 350;
     }

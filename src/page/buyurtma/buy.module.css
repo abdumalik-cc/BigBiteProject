@@ -1,48 +1,96 @@
-.malumotSection .malumotDiv{
+.malumotSection {
+    padding: 30px 0;
     display: flex;
-    justify-content: start;
-    gap: 30px;
-    align-items: center;
-    margin-bottom: 15px;
+    justify-content: center;
 }
-.infDiv{
-     width: 500px;
-}
-.malumotSection h1{
-    text-align: start;
-    font-size: 30px;
-    margin-bottom: 15px;
-}
-.malumotSection span{
-    color: rgb(156, 8, 8);
-}
-.malumotSection #container{
+
+#container {
     display: flex;
     justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
 }
-.inputs input,textarea{
-    width: 80%;
-    padding: 10px 15px;
+
+/* Chap tomonda savatcha va jami */
+.infDiv {
+    width: 500px;
+}
+
+.malumotSection h1 {
+    text-align: start;
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.malumotDiv {
+    display: flex;
+    justify-content: start;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+}
+
+.malumotSection span {
+    color: rgb(156, 8, 8);
+    font-weight: bold;
+}
+
+/* O'ng tomonda inputlar */
+.inputs {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.inputs input,
+.inputs textarea {
+    width: 90%;
+    padding: 12px 16px;
     border-radius: 10px;
     outline: none;
-    border: none;
-    margin-bottom: 20px;
+    border: 1px solid #ccc;
     font-size: 16px;
 }
-.inputs input{
+
+.inputs input {
     height: 45px;
+    transition: 0.3s;
 }
-.inputs textarea{
-    height: 100px;
+
+.inputs textarea {
+    height: 120px;
+    resize: none;
+    transition: 0.3s;
 }
-.inputs{
-    width: 900px;
-}
-.inputs button{
+
+.inputs button {
     background-color: rgb(156, 8, 8);
     color: white;
-    padding: 8px 18px;
+    padding: 12px 20px;
     font-size: 16px;
     border-radius: 10px;
     border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.waitDiv h1 {
+    font-size: 30px;
+}
+
+.waitDiv h1 span {
+    color: rgb(156, 8, 8);
+}
+
+
+@media (max-width:450px) {
+    .malumotDiv #container{
+        flex-direction: column-reverse;
+    }
 }

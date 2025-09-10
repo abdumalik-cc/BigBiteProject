@@ -10,10 +10,10 @@ function Header({ cart, deleteFromCart }) {
       <header>
         <div>
           <h1>Big-Bite</h1>
-          <button className={styles.y}>Yetkazib berish</button>
+          <button className={styles.yet}>Yetkazib berish</button>
         </div>
         <div>
-          <button className={styles.y} onClick={() => setModal(true)}><i className="fa-solid fa-cart-shopping"></i></button>
+          <button className={styles.y} onClick={() => setModal(true)}><i className="fa-solid fa-cart-shopping"></i> <span style={{display : cart.length==0? "none" : "block"}}><p>{cart.length}</p></span></button>
 
 
           <select id="">

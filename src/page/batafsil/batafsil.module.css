@@ -58,6 +58,7 @@
         width: 90%;
         display: block;
         margin: 120px auto;
+        text-align: center;
     }
     .batafsilBox img{
         width: 90%;
@@ -66,5 +67,8 @@
         width: 90%;
         padding: 0 10px;
         display: none;
+    }
+    .narx{
+        margin-top: 12px;
     }
 }

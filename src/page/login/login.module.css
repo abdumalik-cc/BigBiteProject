@@ -1,0 +1,24 @@
+.loginBody{
+    background-color: rgb(69, 2, 2);
+    min-height: 100vh;
+    padding-top: 230px;
+}
+.box{
+    width: 500px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.box input{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.box button{
+    padding: 8px 18px;
+    font-size: 16px;
+    border-radius: 10px;
+}
