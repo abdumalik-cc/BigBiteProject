@@ -5,6 +5,8 @@ import Header from '../../components/header/Header'
 import styles from './home.module.css'
 import { FadeLoader } from 'react-spinners';
 import { Link } from 'react-router-dom';
+import AOS from"aos";
+import "aos/dist/aos.css";
 
 function Home({cart,deleteFromCart}) {
 
@@ -48,6 +50,17 @@ function Home({cart,deleteFromCart}) {
     setData(qidirish)
   }
 
+
+
+
+
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animatsiya davomiyligi (ms)
+      once: true,     // faqat 1 marta ishlasin
+    });
+  }, []);
   return (
     <div>
       <Header cart={cart} deleteFromCart={deleteFromCart}/>
@@ -86,7 +99,7 @@ function Home({cart,deleteFromCart}) {
               ></FadeLoader>
             </div>
           }
-          {Array.isArray(data) && <div className="container">
+          {Array.isArray(data) && <div className="container" data-aos="fade-up">
             {filtredData.map((inf, i) => {
               return <Link key={i}to={`/batafsil/` + inf.id}><Card mahsulot={inf}></Card></Link>
             })}

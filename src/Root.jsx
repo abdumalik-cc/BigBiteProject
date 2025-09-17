@@ -22,7 +22,7 @@ function Root() {
              <Route path='/' element={<Home cart={cart} deleteFromCart={deleteFromCart}/>}></Route>
              <Route path="/batafsil/:id" element={<Batafsil addToCart={addToCart} cart={cart}  deleteFromCart={deleteFromCart}/>}></Route>
              <Route path='/buyurtma' element={<Buyurtma cart={cart}/>}></Route>
-             <Route path='/admin-panel' element={<Admin cart={cart}/>}></Route>
+             <Route path='/admin-panel' element={<Admin/>}></Route>
              <Route path='/login' element={<Login/>}></Route>
              <Route path='*' element={<h1>Page not found 404...</h1>}></Route>
           </Routes>

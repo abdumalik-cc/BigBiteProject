@@ -1,6 +1,7 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import styles from './buy.module.css'
 import { useNavigate } from 'react-router-dom';
+import TypeIt from "typeit";
 
 function Buyurtma({ cart }) {
   const jami = cart.reduce((total, item) => total + Number(item.price), 0);
@@ -80,6 +81,11 @@ function Buyurtma({ cart }) {
     }
   }, [cart]);
 
+
+
+
+ 
+
   return (
     <div>
       <main style={{ display: main == true ? "block" : "none" }}>
@@ -102,7 +108,7 @@ function Buyurtma({ cart }) {
                 <br />
                 <input
                   type="text"
-                  placeholder='Tuman,kvartal,uy'
+                  placeholder='Manzil misol(Tuman,kvartal,uy)'
                   name='addres'
                   value={formData.addres}
                   onChange={handleChange}
@@ -157,11 +163,11 @@ function Buyurtma({ cart }) {
       </main>
       <div className={styles.waitDiv} style={{ display: main == true ? "none" : "block" }}>
         <div className="container" >
-            <h1><span>Big-Bite</span></h1>
-            <h1>Buyurtmangiz <span>40-50</span> daqiqa ichida yetkazib beriladi</h1>
-            <h1>Kuryer siz blan <span>o'zi</span> bog'lanadi</h1>
-            <h1>Kuryerga <span>{jami}</span> s'om naqt berasiz</h1>
-            <h1><span>Bizni</span> tanlaganingiz uchun rahmat😊</h1>
+          <h1 ><span>Big-Bite</span></h1>
+          <h1>Buyurtmangiz <span>40-50</span> daqiqa ichida yetkazib beriladi</h1>
+          <h1>Kuryer siz blan <span>o'zi bog'lanadi</span></h1>
+          <h1>Kuryerga <span>{jami}</span> s'om <span>naqt</span> berasiz</h1>
+          <h1><span>Bizni</span> tanlaganingiz uchun rahmat😊</h1>
         </div>
       </div>
     </div>
